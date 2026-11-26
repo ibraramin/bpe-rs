@@ -1,0 +1,19 @@
+[package]
+name = "byte-bpe"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "A small, dependency-free byte-level BPE tokenizer"
+repository = "https://github.com/ibraramin/bpe-rs"
+readme = "README.md"
+keywords = ["tokenizer", "bpe", "nlp"]
+categories = ["text-processing", "science"]
+
+[dev-dependencies]
+criterion = "0.5"
+proptest = "1"
+tokenizers = "0.21"
+
+[[bench]]
+name = "bpe_bench"
+harness = false
