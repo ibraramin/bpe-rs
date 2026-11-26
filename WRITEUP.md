@@ -1,6 +1,6 @@
 # Building byte-bpe: an honest benchmark against HuggingFace
 
-Crate: <https://crates.io/crates/byte-bpe> (publication pending owner email verification on crates.io, 2026-11-25). Source: <https://github.com/ibraramin/bpe-rs>.
+Crate: <https://crates.io/crates/byte-bpe> (v0.1.1 published 2026-11-26), API docs: <https://docs.rs/byte-bpe/0.1.1/byte_bpe/>. Source: <https://github.com/ibraramin/bpe-rs>.
 
 ## Why
 
@@ -30,4 +30,4 @@ Hardware: AMD Ryzen 7 6800HS Creator Edition, x86_64, 16 logical CPUs, rustc 1.9
 
 ## What is next
 
-Owner verification of the crates.io email unlocks `cargo publish`, docs.rs and the CV line. The tagged GitHub releases (`v0.1.0`, then `v0.1.1` for a newer-clippy lint fix) are already citable. A follow-up can then test whether feature-gated SIMD scoring narrows the gap, with the same benchmark harness deciding honestly.
+The crate and docs.rs page are live, and the tagged GitHub releases (`v0.1.0`, then `v0.1.1` for a newer-clippy lint fix) are citable. A follow-up can test whether feature-gated SIMD scoring narrows the 5.7x gap, with the same benchmark harness deciding honestly.

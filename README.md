@@ -2,7 +2,7 @@
 
 A from-scratch byte-level BPE tokenizer for Rust, benchmarked honestly against HuggingFace `tokenizers`.
 
-[![CI](https://github.com/ibraramin/bpe-rs/actions/workflows/ci.yml/badge.svg)](https://github.com/ibraramin/bpe-rs/actions/workflows/ci.yml) ![crate](https://img.shields.io/badge/crate-byte--bpe-blue) ![license](https://img.shields.io/badge/license-MIT-green) ![rust](https://img.shields.io/badge/rust-1.92%2B-orange)
+[![CI](https://github.com/ibraramin/bpe-rs/actions/workflows/ci.yml/badge.svg)](https://github.com/ibraramin/bpe-rs/actions/workflows/ci.yml) [![crates.io](https://img.shields.io/crates/v/byte-bpe.svg)](https://crates.io/crates/byte-bpe) [![docs.rs](https://docs.rs/byte-bpe/badge.svg)](https://docs.rs/byte-bpe) ![license](https://img.shields.io/badge/license-MIT-green) ![rust](https://img.shields.io/badge/rust-1.92%2B-orange)
 
 > Naming note: this package is published as `byte-bpe` because `bpe-rs` was already taken on crates.io (verified and recorded on 2026-11-25). The repository directory and GitHub project remain `bpe-rs`.
 
@@ -87,7 +87,8 @@ Version note: `tokenizers` 0.21 removed the older `Tokenizer::train_from_iterato
 - Session design: `docs/sessions/phase-2/ai.md`
 - Built and locally verified 2026-11-25: core library, proptest/edge-case tests, criterion benchmark vs HuggingFace, MIT LICENSE, README and CI.
 - Source and tagged `v0.1.1` release: <https://github.com/ibraramin/bpe-rs> (v0.1.0 remains as the initial historical tag).
-- crates.io publication pending: a valid token was rejected on 2026-11-25 and 2026-11-26 with HTTP 400 "A verified email address is required to publish crates". The owner must confirm the account email at <https://crates.io/settings/profile>, then `cargo publish` completes the listing and docs.rs URL. The GitHub release is the citable fallback per the session design. The 24-second demo GIF is above.
+- Published 2026-11-26: <https://crates.io/crates/byte-bpe> (v0.1.1) with generated API docs at <https://docs.rs/byte-bpe/0.1.1/byte_bpe/>.
+- Earlier publish attempts were rejected until the owner verified the crates.io account email; the tagged GitHub releases remain the citable fallback. The 24-second demo GIF is above.
 
 ## License
 
