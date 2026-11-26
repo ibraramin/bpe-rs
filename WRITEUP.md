@@ -30,4 +30,4 @@ Hardware: AMD Ryzen 7 6800HS Creator Edition, x86_64, 16 logical CPUs, rustc 1.9
 
 ## What is next
 
-Owner verification of the crates.io email unlocks `cargo publish`, docs.rs, a tagged `v0.1.0` release and the CV line. A follow-up can then test whether feature-gated SIMD scoring narrows the gap, with the same benchmark harness deciding honestly.
+Owner verification of the crates.io email unlocks `cargo publish`, docs.rs and the CV line. The tagged GitHub releases (`v0.1.0`, then `v0.1.1` for a newer-clippy lint fix) are already citable. A follow-up can then test whether feature-gated SIMD scoring narrows the gap, with the same benchmark harness deciding honestly.

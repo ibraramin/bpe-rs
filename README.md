@@ -86,7 +86,7 @@ Version note: `tokenizers` 0.21 removed the older `Tokenizer::train_from_iterato
 
 - Session design: `docs/sessions/phase-2/ai.md`
 - Built and locally verified 2026-11-25: core library, proptest/edge-case tests, criterion benchmark vs HuggingFace, MIT LICENSE, README and CI.
-- Source and tagged `v0.1.0` release: <https://github.com/ibraramin/bpe-rs>.
+- Source and tagged `v0.1.1` release: <https://github.com/ibraramin/bpe-rs> (v0.1.0 remains as the initial historical tag).
 - crates.io publication pending: a valid token was rejected on 2026-11-25 and 2026-11-26 with HTTP 400 "A verified email address is required to publish crates". The owner must confirm the account email at <https://crates.io/settings/profile>, then `cargo publish` completes the listing and docs.rs URL. The GitHub release is the citable fallback per the session design. The 24-second demo GIF is above.
 
 ## License

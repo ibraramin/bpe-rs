@@ -226,7 +226,8 @@ fn hex_decode(text: &str) -> Result<Vec<u8>, String> {
         return Err(format!("hex token has odd length: {:?}", text));
     }
     let mut out = Vec::with_capacity(text.len() / 2);
-    for pair in text.as_bytes().chunks_exact(2) {
+    // `as_chunks` is stable and avoids clippy's newer `chunks_exact` lint.
+    for pair in text.as_bytes().as_chunks::<2>().0 {
         let high =
             hex_value(pair[0]).ok_or_else(|| format!("invalid hex digit in token: {:?}", text))?;
         let low =
