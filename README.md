@@ -12,7 +12,7 @@ A compact, dependency-free byte-level BPE (Byte Pair Encoding) tokenizer for Rus
 
 [![Launch video](docs/assets/brag.jpg)](docs/assets/brag.mp4)
 
-https://github.com/ibraramin/bpe-rs/raw/main/docs/assets/brag.mp4
+https://github.com/user-attachments/assets/8cb4eb69-2b0b-46af-8ac2-33b4feda04b6
 
 
 ![Project showcase](https://github.com/ibraramin/bpe-rs/releases/download/v0.1.1/showcase.gif)
