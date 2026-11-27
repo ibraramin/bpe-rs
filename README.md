@@ -10,9 +10,10 @@ A compact, dependency-free byte-level BPE (Byte Pair Encoding) tokenizer for Rus
 
 > Naming note: this package is published as `byte-bpe` because `bpe-rs` was already taken on crates.io (verified 2026-11-25). The repository and GitHub project remain `bpe-rs`.
 
-[![Launch video](https://github.com/ibraramin/bpe-rs/releases/download/v0.1.1/brag.jpg)](https://github.com/ibraramin/bpe-rs/releases/download/v0.1.1/brag.mp4)
+[![Launch video](docs/assets/brag.jpg)](docs/assets/brag.mp4)
 
-[Watch the 20-second launch video](https://github.com/ibraramin/bpe-rs/releases/download/v0.1.1/brag.mp4)
+https://github.com/ibraramin/bpe-rs/raw/main/docs/assets/brag.mp4
+
 
 ![Project showcase](https://github.com/ibraramin/bpe-rs/releases/download/v0.1.1/showcase.gif)
 
@@ -130,9 +131,7 @@ A thread-parallel candidate was reverted because it measured 0.99x, 1.02x, and 0
 
 ## Demo
 
-![byte-bpe terminal demo](demo.gif)
-
-A terminal recording of the included demo: training a tokenizer, encoding and decoding a sample, and measuring encode throughput. Source: `examples/demo.rs`.
+An abstract walk through the byte alphabet, merge rules, exact round-trip and the pre-registered SIMD gate in the video above. The showcase above is a terminal recording of `examples/demo.rs`.
 
 ## Scope and limitations
 
