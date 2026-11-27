@@ -29,6 +29,14 @@
 //! assert!(tokenizer.vocab_size() >= 256);
 //! ```
 //!
+//! ## Optional features
+//!
+//! No features are enabled by default; [`Tokenizer::encode`] is the original
+//! single-threaded reference path in every build. The provisional `simd` feature
+//! adds `Tokenizer::encode_simd` as a falsifiable experiment; see `results/` for
+//! its pre-registered criteria and measured outcome. A parallel-scan candidate
+//! was measured and reverted because it showed no reproducible win.
+//!
 //! ## Serialization format
 //!
 //! [`Tokenizer::save`] writes and [`Tokenizer::from_file`] reads this format:
@@ -140,6 +148,91 @@ impl Tokenizer {
         }
 
         ids
+    }
+
+    /// SIMD candidate: an SSE2-accelerated minimum-rank scan over a flat
+    /// `(left, right)` lookup table. Compiled only with the provisional `simd`
+    /// feature and retained only if the pre-registered benchmark win is measured
+    /// (see `results/preregistration.md` and `results/preregistration-reconciliation.md`).
+    #[cfg(feature = "simd")]
+    pub fn encode_simd(&self, input: &[u8]) -> Vec<u32> {
+        #[cfg(not(target_arch = "x86_64"))]
+        {
+            let _ = input;
+            self.encode(input)
+        }
+        #[cfg(target_arch = "x86_64")]
+        {
+            use std::arch::x86_64::*;
+
+            let mut ids: Vec<u32> = input.iter().map(|&byte| u32::from(byte)).collect();
+            if ids.len() < 2 {
+                return ids;
+            }
+
+            let v = self.vocab_size();
+            let table_len = match v.checked_mul(v) {
+                Some(len) if len <= 1 << 24 => len,
+                // Refuse an unreasonable allocation: fall back to the reference path.
+                _ => return self.encode(input),
+            };
+            let mut table = vec![u32::MAX; table_len];
+            for (rank, &(left, right)) in self.merges.iter().enumerate() {
+                table[left as usize * v + right as usize] = rank as u32;
+            }
+
+            loop {
+                let n = ids.len();
+                let mut best = u32::MAX;
+                let mut i = 0usize;
+
+                // Four windows per iteration. SSE2 is baseline on x86_64, so no
+                // target-feature attribute or CPU ID check is required.
+                while i + 4 < n {
+                    unsafe {
+                        let left = _mm_loadu_si128(ids.as_ptr().add(i) as *const __m128i);
+                        let right = _mm_loadu_si128(ids.as_ptr().add(i + 1) as *const __m128i);
+                        let idx = _mm_add_epi32(
+                            _mm_mullo_epi32(left, _mm_set1_epi32(v as i32)),
+                            right,
+                        );
+                        let mut slots = [0u32; 4];
+                        _mm_storeu_si128(slots.as_mut_ptr() as *mut __m128i, idx);
+                        // SSE2 has no integer gather; table reads remain scalar.
+                        let ranks = _mm_setr_epi32(
+                            table[slots[0] as usize] as i32,
+                            table[slots[1] as usize] as i32,
+                            table[slots[2] as usize] as i32,
+                            table[slots[3] as usize] as i32,
+                        );
+                        let paired =
+                            _mm_min_epu32(ranks, _mm_shuffle_epi32(ranks, 0b10_11_00_01));
+                        let min4 =
+                            _mm_min_epu32(paired, _mm_shuffle_epi32(paired, 0b00_00_10_10));
+                        let candidate = _mm_cvtsi128_si32(min4) as u32;
+                        if candidate < best {
+                            best = candidate;
+                        }
+                    }
+                    i += 4;
+                }
+                while i + 1 < n {
+                    let candidate = table[ids[i] as usize * v + ids[i + 1] as usize];
+                    if candidate < best {
+                        best = candidate;
+                    }
+                    i += 1;
+                }
+
+                if best == u32::MAX {
+                    break;
+                }
+                let (left, right) = self.merges[best as usize];
+                ids = apply_merge(&ids, left, right, 256 + best);
+            }
+
+            ids
+        }
     }
 
     /// Decode token ids back into bytes.

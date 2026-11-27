@@ -1,0 +1,71 @@
+    Finished `bench` profile [optimized] target(s) in 0.14s
+     Running unittests src/lib.rs (target/release/deps/byte_bpe-1f15e57fe3cbb3c9)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running benches/bpe_bench.rs (target/release/deps/bpe_bench-6cce9eb481cd09fa)
+Gnuplot not found, using plotters backend
+Benchmarking encode_realistic/scalar/512
+Benchmarking encode_realistic/scalar/512: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 8.5s, or reduce sample count to 50.
+Benchmarking encode_realistic/scalar/512: Collecting 100 samples in estimated 8.4913 s (100 iterations)
+Benchmarking encode_realistic/scalar/512: Analyzing
+encode_realistic/scalar/512
+                        time:   [76.063 ms 76.920 ms 77.830 ms]
+                        thrpt:  [627.62 KiB/s 635.05 KiB/s 642.20 KiB/s]
+                 change:
+                        time:   [-23.611% -19.364% -15.337%] (p = 0.00 < 0.05)
+                        thrpt:  [+18.115% +24.014% +30.909%]
+                        Performance has improved.
+Found 10 outliers among 100 measurements (10.00%)
+  6 (6.00%) high mild
+  4 (4.00%) high severe
+Benchmarking encode_realistic/simd/512
+Benchmarking encode_realistic/simd/512: Warming up for 3.0000 s
+Benchmarking encode_realistic/simd/512: Collecting 100 samples in estimated 6.0800 s (200 iterations)
+Benchmarking encode_realistic/simd/512: Analyzing
+encode_realistic/simd/512
+                        time:   [30.036 ms 30.218 ms 30.451 ms]
+                        thrpt:  [1.5665 MiB/s 1.5786 MiB/s 1.5882 MiB/s]
+                 change:
+                        time:   [-18.542% -14.780% -11.220%] (p = 0.00 < 0.05)
+                        thrpt:  [+12.637% +17.343% +22.762%]
+                        Performance has improved.
+Found 6 outliers among 100 measurements (6.00%)
+  3 (3.00%) high mild
+  3 (3.00%) high severe
+
+Benchmarking encode_throughput/byte_bpe/512
+Benchmarking encode_throughput/byte_bpe/512: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 17.7s, or reduce sample count to 20.
+Benchmarking encode_throughput/byte_bpe/512: Collecting 100 samples in estimated 17.650 s (100 iterations)
+Benchmarking encode_throughput/byte_bpe/512: Analyzing
+encode_throughput/byte_bpe/512
+                        time:   [169.68 ms 171.54 ms 173.59 ms]
+                        thrpt:  [1.2939 MiB/s 1.3094 MiB/s 1.3237 MiB/s]
+                 change:
+                        time:   [+0.9137% +2.6322% +4.1741%] (p = 0.00 < 0.05)
+                        thrpt:  [-4.0068% -2.5647% -0.9055%]
+                        Change within noise threshold.
+Found 7 outliers among 100 measurements (7.00%)
+  5 (5.00%) high mild
+  2 (2.00%) high severe
+
+Benchmarking encode_throughput/huggingface_bpe/512
+Benchmarking encode_throughput/huggingface_bpe/512: Warming up for 3.0000 s
+Benchmarking encode_throughput/huggingface_bpe/512: Collecting 100 samples in estimated 7.3436 s (200 iterations)
+Benchmarking encode_throughput/huggingface_bpe/512: Analyzing
+encode_throughput/huggingface_bpe/512
+                        time:   [30.423 ms 31.196 ms 32.007 ms]
+                        thrpt:  [7.0175 MiB/s 7.2001 MiB/s 7.3830 MiB/s]
+                 change:
+                        time:   [-6.1879% -1.7025% +3.1277%] (p = 0.49 > 0.05)
+                        thrpt:  [-3.0328% +1.7320% +6.5961%]
+                        No change in performance detected.
+Found 3 outliers among 100 measurements (3.00%)
+  3 (3.00%) high mild
+

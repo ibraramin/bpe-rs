@@ -1,0 +1,593 @@
+in Phase 3 first.
+- **Rust BPE tokenizer with SIMD + wasm target** — benchmark vs. HuggingFace `tokenizers`; publish to crates.io.
+| Candidate | Classification | Basis |
+feature-gated* in scope (`docs/sessions/phase-2/ai.md:40-49`), wasm "may be dropped cleanly"
+- special tokens: none
+10. **Day 11-12 - publish.** Run `cargo publish --dry-run`, then `cargo publish` using
+- **Weakest assumption:** portfolio depth, not application volume, is the bottleneck. If
+crates.io listing plus docs.rs API docs.
+Non-goals: training a new foundation model; GPU kernels; full GPT pipeline; wasm is
+| HuggingFace `tokenizers` BPE encode | 7.806 (CI 7.710 to 7.892) | same bytes | 512 |
+2. **Two outbound CVs + one internal master.** No hybrid is ever sent.
+6. **Talks / meetups** — highest trust, slowest path (local Rust/AI meetups first).
+| Then | Update both CVs with public links + benchmark numbers |
+(verifiability) and PR #2 (docs guides), `v0.1.0` releases with demo GIFs, green CI,
+- Owner: 10+ corporate applications with the correct CV variant.
+| API contract tests | Differentiator | Only `orderflow-api` among cited peers |
+parallel, each timeboxed to roughly 2 weeks. Finish one published crate over two
+- Read `docs/recommendations.md` (Rust × AI-infra thesis, publish-first), and
+llama.cpp, a crate, and a blog post. *Highest-signal artifact for AI-infra roles.*
+- No pretrained vocabulary is shipped. You must train on your own corpus with `Tokenizer::train` or load a previously saved file with `Tokenizer::from_file`.
+verifiable work and drop live-URL features cleanly rather than leaving placeholders.
+Local state: dependency-free core (`projects/bpe-rs/src/lib.rs:1-322`), rustdoc example already
+the evidence is thin, keep scope as-is and spend the next burst on 10+ applications with
+- Owner approval required before any commit. No `.tex`, PDF, `state/`, or
+Ship **two** complete, polished projects rather than six half-finished repos.
+| State JSON valid | `python3 -m json.tool state/session-state.json` | exit 0 (`VALID`) |
+## 4. Phases and session queue
+| 1 | `docs/sessions/phase-1/miniml-cpp.md` | MiniML-CPP: gradient checker, XOR convergence demo, checkpointing + verifiability |
+## 2. Research method and lanes
+- **Repo hygiene** (recruiters skim): About description + topics tags, README with features/setup/demo,
+research inputs, not yet facts to act on.
+pdftotext -layout /var/tmp/opencode/cvbuild-corp/_switchtest.pdf - | grep 'Agentic Build Lab'
+---
+were reconciled before the owner decision gate (`scope-expansion.md` sections 5-6). Claims that
+to entry-level corporate recruiters, then produce an ordered, timeboxed build gameplan.
+Owner: Ibrar Amin. Equal-split strategy: this project and `phase2-ai.md` are built in
+10. **Day 11-12 - deploy.** Push to chosen host, attach managed Postgres, set env vars,
+currently broke and wants work immediately"), and Rust roles skew senior/staff (decision "Rust
+no f-ligatures (U+FB00..FB06) and no em-dashes (U+2014) in either PDF.
+`wasm-bindgen` encode demo. Timebox to one day; if it stalls, remove the partial
+Owner: Ibrar Amin. Run this in a FRESH session after the phase-2 closeout. This is a
+| Idempotency + concurrency hardening | Differentiator | `dotnet/eShop`, `orderflow-api`; partial in our repo |
+- **UNVERIFIED: "entry-level corporate AI jobs are abundant in Bangladesh."** Live web
+decision is `docs/adr/ADR-002-phase1-scope-expansion.md` (immutable). Full decision + DoD:
+1. **byte-bpe:** which single feature gives the largest credibility gain per hour?
+This session forbids CV/`.tex` edits, so the line was NOT patched. The scope-limited equivalent
+experiment; Phase 2b-B local observability, API contract tests and a committed k6 load script
+- tokenizers — https://github.com/huggingface/tokenizers · qdrant — https://github.com/qdrant/qdrant
+## 1. Objective and decision
+Crates.io: <https://crates.io/crates/byte-bpe>
+table, and tradeoffs. Hand the CV line in section 8 to the owner.
+until an actual Criterion run is recorded" — a Criterion table already exists (`README.md:59-62`).
+each. Implementation is NOT authorised by this session — it needs a fresh owner-approved burst.
+11. **Day 12-13 - measure + demo.** Load test with `hey`/`k6` at a stated concurrency;
+HELD is now historical — that writer committed it during this session.
+half-finished repos (per `docs/recommendations.md`).
+- Rust usage **14.8%** (up from 12.6%); most-admired language **every year 2016–2025**; entered
+- candle — https://github.com/huggingface/candle · mistral.rs — https://github.com/EricLBuehler/mistral.rs
+run shows a genuine win; README hygiene. No wasm, no bundled vocabulary, no version bump and no
+**arXiv preprint + teaching asset**. Emulate `TransformerLensOrg/TransformerLens`, `decoderesearch/SAELens`.
+## 1. Objective
+This is a RESEARCH + DECISION document. No implementation, no publish, no CV/PDF edit and no
+win), wasm demo, a shipped pretrained vocabulary artifact, more rustdoc examples,
+- `@explorer`: read-only recon of both local repos; summarise coverage gaps, benchmark
+## 8. CV update line to paste into the relevant CV fragment after completion
+> Owner-approved 2026-11-25. Dual-track strategy: academic (lecturer) + corporate (web/backend and AI/ML).
+- **MiniML-CPP** — add README architecture diagram, tests, CI, and a benchmark table.
+`POST /payments/initiate`, `POST /payments/callback`. Add FluentValidation,
+- **Weakest assumption:** that a self-written BPE can be compared fairly to a mature
+- `pdfinfo <pdf> | grep -E 'Pages|Page size'` reports `Pages: 1`, A4 for both outbound PDFs.
+| Phase | Session doc | Deliverable |
+- Bursts 1-4 implemented; bursts 1-3 committed (`d65a155` = burst 3). Burst 4 gate PASS from
+---
+- **Bangla / code-switched jailbreak benchmark + leaderboard** (`garak`, `HarmBench`, `promptfoo`)
+## 6. Deliverables (only these files)
+| Later | `docs/sessions/later/corporate-scraper.md` | `dhaka-jobs-scraper`: role/seniority/stack scoring + fit-score digest |
+build scope. Owner's binding directive at the decision gate (verbatim intent): polish and expand
+Repository: `bpe-rs`
+- **Commit graph**: consistency > volume; never fake commits — reviewers read commit messages.
+`corporate-gameplan.md` sections 4-5, both project READMEs/benchmarks, and both original session
+(trailing whitespace in a concurrent writer's CV publication line, added outside this session).
+| No forbidden claims on shipped PDFs | `pdftotext -layout CV_Ibrar_Amin_{AI-ML,Web}.pdf - \| grep -iE 'patent\|lead author on 3\|IEOM\|Architected'` | no matches |
+any commit without explicit approval. BD job-abundance stays UNVERIFIED; no hiring-outcome claim.
+- Application tracker (company / role / date / link / status / follow-up); send 10+ applications now.
+## 4. Academic track (junior lecturer)
+HuggingFace `tokenizers`, with SIMD where it actually helps and a wasm target if time
+## Limitations
+Paste into the PROJECTS itemize in `fragments/projects-ai.tex` (AI-ML CV, built by `ai_ml.tex`), and optionally into `main.tex` as research tooling, after owner approval (no em-dashes):
+SIMD, wasm and a pretrained vocabulary are all absent; SIMD is explicitly *optional and
+Before running the `curl` rows, substitute the placeholders: set `LIVE_URL` to your actual
+---
+Web norms: parallel encode is table stakes — HuggingFace `tokenizers` ships rayon parallelism on
+## Benchmarks
+Run with `cargo bench`. `benches/bpe_bench.rs` defines two Criterion groups, both measured on one local machine only (AMD Ryzen 7 6800HS Creator Edition, x86_64, 16 logical CPUs, stable rustc 1.92.0):
+runnable local DoD; no step requires a hosted URL. BD job-abundance is UNVERIFIED and no claim is
+(emulate `qdrant`, `lancedb`).
+cause interviews or offers.
+| SIMD intrinsics | Differentiator (risky) | HF `bitcannon`, `rust-tiktoken`; `bpe-qwen` TODO; Phase 4 AVX2 slowdown |
+## Blockers
+out = subprocess.check_output(["pdftotext", "-bbox", f, "-"], text=True)
+|---|---|---|---|
+| 0 | This doc | Two outbound CVs + master/fragments; gate both; apply immediately |
+## 7. Risks and open assumptions
+after scrolling + 4 s Playwright reads `<5 min`/`2 wks`. No counter hotfix in scope.
+- No MSc, no journal paper, fresh graduate: real handicap; mitigate with CGPA + verified projects.
+- Merge commits used for PRs so `v0.1.0` remains reachable from `main`; do not move tags.
+beats 8 half-finished repos. Hiring managers spend a couple of minutes per profile — optimize for
+exit code), `docs/activeContext.md`, and `CHANGELOG.md` under Unreleased. The commit
+SIMD or wasm turn into half-finished branches; opportunity cost versus applications.
+12. **Day 13-14 - write-up.** Short blog/README section linking the crate, benchmark
+- Owner feedback: MiniML GIF is low-res; Nexus hero may be from an older design. Both are
+Contract tests appear only in `orderflow-api`. Committed load scripts with stored results are rare
+live-URL candidate is dropped rather than left as a placeholder.
+Correctness is checked by unit tests, five integration tests and a proptest property over arbitrary byte strings up to 256 bytes. The test suite passes; the crate is warning-free under `cargo clippy -- -D warnings`.
+- Risks: research drifts into implementation; recruiter-signal claims cannot be verified;
+integration), `cargo bench --quiet`, `python3 tools/parity.py check`, 7-case
+# Session design: Phase 2 Web (BD commerce API + storefront)
+- Pre-registered benchmark protocol and frozen corpus: `results/bench-preregistration.md` and `results/corpus.txt`; no post-registration results recorded under `results/` at the time of writing (see Benchmarks).
+Chosen next scope: **Phase 2b-A parallel encode (byte-bpe) + a conditional, pre-registered SIMD
+| `cargo test` | N/A (no Rust code in this project); not run |
+next build scope, explicit non-goals, weakest assumption and one alternative.
+`docs/corporate-gameplan.md` sections 4 to 5 (phase queue, non-project levers).
+demo GIF + tagged release.
+```latex
+| Multiple provider adapters | UNVERIFIED | No cited entry-level portfolio repo with two adapters |
+- Append a new "Phase 2b" section to `docs/corporate-gameplan.md` with ordered, timeboxed
+Web norms: OpenTelemetry is absent in all four baseline e-commerce repos surveyed
+`state/session-state.json`).
+## 3. CV set (current state)
+`state/session-state.json` (artifacts, decisions, next_actions, current_phase),
+with stored results** against the local Compose stack, with an honest README that states every
+- GitHub profile README — https://docs.github.com/en/account-and-profile/how-tos/profile-customization/managing-your-profile-readme
+- **UNVERIFIED: "entry-level corporate web jobs are abundant in Bangladesh."** Live web
+| `CV_Ibrar_Amin_Tuition.pdf` | School parents (tuition) | Existing, untouched |
+# byte-bpe
+[![CI](https://github.com/ibraramin/bpe-rs/actions/workflows/ci.yml/badge.svg)](https://github.com/ibraramin/bpe-rs/actions/workflows/ci.yml) [![crates.io](https://img.shields.io/crates/v/byte-bpe.svg)](https://crates.io/crates/byte-bpe) [![docs.rs](https://docs.rs/byte-bpe/badge.svg)](https://docs.rs/byte-bpe) ![license](https://img.shields.io/badge/license-MIT-green) ![rust](https://img.shields.io/badge/rust-1.92%2B-orange)
+publish in this burst.
+Cannot be honestly verified here: any deployed `LIVE_URL` health/swagger/order check, a deployed
+\end{itemize}
+spending the next burst on applications and Phase 1/3 work instead.
+return cited sources, and flag anything unverifiable instead of guessing.
+- Optional: switch `deep-flagship` to crates.io `byte-bpe` 0.1.1.
+allows.
+`Cargo.toml` now uses the registry dependency (the earlier "Optional: switch..." note above is
+"what would change my mind". Do not pick silently when evidence conflicts.
+- `@librarian`: web research on current Rust tokenizer crates and ASP.NET portfolio norms;
+- WebAssembly is not included in this milestone. A wasm target is a possible future addition.
+| Committed load script + stored results | Differentiator (rare) | OTel demo uses shell/curl, not k6 |
+[owner: orchestrator]
+- Read `docs/recommendations.md` (portfolio rule, publish-first tactic, GitHub hygiene).
+## 0. Strategic thesis (read this first)
+`docs/corporate-gameplan.md` edits from this session.
+## 1. Objective
+```
+- Read both project READMEs plus their benchmark tables, and the two original session
+tectonic --outdir /var/tmp/opencode/cvbuild-corp _switchtest.tex    # exit 0
+3. **AI-powered development is a flagship showcase**, present in both CVs with different framing.
+See `state/handoff/latest.md` -> "Parallel review panel" for the four lanes, verdicts and evidence.
+Decision: **parallel encode behind a Cargo feature**, with a pre-registered Criterion run on a
+- Toolchain present: stable Rust + `rustfmt` + `clippy`, `cargo`, Git, `curl`.
+## 1. Objective
+- **Unix shell in C** — fork/exec, pipes, redirection, signals, job control.
+EleutherAI, LASR Labs, AI Safety Camp — remote-friendly and credible signals.
+- **`malloc` allocator** — mmap/brk, free-list, coalescing, `realloc`, benchmark vs libc.
+portfolio depth or application throughput is the current bottleneck.
+A 24-second terminal recording showing train, encode/decode, `cargo test` and a Criterion run. Source: `examples/demo.rs`.
+existing Compose file), distinct API contract tests against the OpenAPI schema, a k6 load script
+\item Built and deployed a containerized REST API with PostgreSQL order persistence and a bKash/Nagad sandbox payment flow, documented with OpenAPI and consumed by a Next.js storefront at [live URL].
+Commit only with explicit owner approval.
+No `[features]` table: `encode` rebuilds a rank map and rescans per pass (`src/lib.rs:115-143`).
+awaits explicit owner approval; this session writes only the two session-design docs.
+```
+- Confirm crate name availability on crates.io on Day 1 (before writing lots of code).
+164-188`), 5 seeded products (`DbInitializer.cs:13-20`), 9 passing integration tests, Swagger,
+contract-test artifact, and more than two provider adapters.
+| 1 | 2b-A1: feature-gated parallel encode in `byte-bpe`; keep single-threaded path as default | fixer (Rust lane) | `cd projects/bpe-rs && cargo test --all-features` |
+repo on GitHub profile README. Hand the CV line in section 8 to the owner.
+- **Option A — corporate flagship: `tiny-infer` (LLM inference engine from scratch, Rust).**
+## In progress
+Then dispatch the parallel review panel (at least 2 `@reviewer` plus 2
+Dhaka) will settle it before any effort is spent optimizing for that market.
+`v0.1.0` release. Do not mark done with a placeholder metric still unfilled.
+- The BD job-abundance claim remains UNVERIFIED. Do not assert it. The scraper session is
+- Pinned niche from `docs/recommendations.md` is Rust x AI-infra; this web project is the
+- Added the public protein-prediction repo with its README-stated ROC-AUC 0.911 (verified from repo).
+- trainer: `BpeTrainer::builder().vocab_size(512).initial_alphabet((0u8..=255).map(char::from).collect::<HashSet<char>>()).show_progress(false).build()`
+Research interests → Publications (reverse-chron, bold your name) → Research experience →
+| 2 | 2b-A2: pre-registered Criterion run on a realistic corpus; commit real results; keep conditional SIMD only if a genuine win is measured, else document the negative result | fixer (Rust lane) + oracle falsification | `cd projects/bpe-rs && cargo bench --all-features` and `git diff --check` |
+## 7. Risks + weakest assumption + one alternative
+Observed: all rows pass **except** repo-wide `git diff --check`, which exits 2 on `main.tex:83`
+- **Pin 3–5 repos**, mixing your projects with OSS you've contributed to.
+deployed base URL (for example `https://your-app.onrender.com`) and export it in the shell.
+## 1. Objective
+| `dotnet test` | exit 0; all unit + integration tests pass |
+## Next
+> Do **one** flagship well. A from-scratch OS/runtime-class project is career-altering
+5. **Day 5-6 - tests.** xUnit unit tests + WebApplicationFactory integration tests with
+Ship a deployed ASP.NET Core + PostgreSQL REST API with a bKash/Nagad **sandbox**
+Weakest assumption: **project polish, not application throughput, is the current constraint.**
+Candidates: auth/RBAC, OpenTelemetry-style observability, idempotency/concurrency
+differentiator? Cite concrete repos, not generic advice.
+maps directly onto your C/C++/Rust + ML profile.
+does not exist yet; create it). A later reversal is a NEW ADR, not an edit to this one.
+```latex
+[owner: orchestrator]
+| Builds cleanly | `tectonic --outdir ... ai_ml.tex` / `web.tex` | exit 0; absolute-font-path warnings only |
+\begin{itemize}
+XOR GIF is 900×520/100 frames; OG image is a stale dark-green card vs the live light-teal design.
+|---|---|
+pdftotext -layout /var/tmp/opencode/cvbuild-corp/_switchtest2.pdf - | grep -E 'Document Processing API|Agentic Build Lab'
+- One alternative: with no hosting available, restrict every candidate to locally
+1. **Publish crates to crates.io** — permanent, indexed, auto-docs on docs.rs. Even a small documented
+niche Rust × AI-infra. Any expansion must serve that, not vanity metrics.
+- Serialization: `save` writes a plain-text snapshot. The first line is the vocabulary size `N` as a decimal integer, followed by exactly `N` lines holding each token's bytes as lowercase hexadecimal (a blank line denotes empty bytes), then one `LEFT RIGHT` line per merge rule using decimal token ids in priority order. `from_file` parses that layout and rebuilds the exact same id space, reporting `InvalidData` on a malformed file.
+## 8. Risks + weakest assumption + one alternative
+matmul *slower* than scalar (`state/session-state.json`, decision "measured AVX2 matmul was
+via a NEW ADR rather than adding a placeholder URL.
+`huggingface/candle` (21.1k★) and `EricLBuehler/mistral.rs` (7.7k★). Ship: benchmark vs.
+skimmability, benchmarks, and a README that shows engineering judgment.
+`docs/sessions/phase-1/scope-decision.md` §14 plus a fresh parallel review panel.
+[owner: orchestrator]
+`[crate-name]` or `[crate-version]`.
+|---|---|
+`@requirements-reviewer` lanes, disjoint focuses). A lighter panel requires explicit owner
+## Architecture notes
+The base alphabet is all 256 byte values, so every byte string is representable and `decode(encode(bytes)) == bytes` holds even for bytes absent from the training corpus. Training counts adjacent symbol pairs, merges the most frequent pair (deterministic tie-break: lowest ids), and repeats until the vocabulary reaches the requested size. Encoding applies the learned merges in priority order. A plain-text save/load format makes trained tokenizers portable.
+SIMD feature does not beat scalar and tempts a half-finished branch; benchmark
+| Both outbound PDFs are 1 page A4 | `pdfinfo` on each | `Pages: 1`, 595.28 x 841.89 pts |
+| Parallel review panel | handoff -> "Parallel review panel" | R1 APPROVED, R2 APPROVED, Q1 APPROVED, Q2 APPROVED (round 3), R3 APPROVED |
+PHP/Laravel or second framework; no CV/`.tex`/PDF edits; no crates.io publish or GitHub release; no
+|---|---|---|
+- **Rust vector DB / HNSW index** with scalar/product quantization — RAG infra talking point
+owner. This overrides the oracle's applications-first counter-proposal by directive, not evidence.
+2. **Workshop papers** (NeurIPS/ICLR/ACL workshops) — lower bar than main tracks.
+dropped, not silently reinstated.** Prevalence of multiple payment adapters is UNVERIFIED.
+- **PerfPal** — private repo; publish a public demo / OSS companion + architecture write-up so it's verifiable.
+- North-star unchanged: proof-of-work portfolio for entry-level corporate roles, pinned
+(https://github.com/dotnet/eShop, https://github.com/suvanshchawla/dotnet-opentelemetry-tracing-demo).
+- Risks: crate name already taken; crates.io token unavailable to a new account;
+(`docs/recommendations.md:20-22` — "1 flagship + 2 finished mid-size + 1 crates.io publish + 1
+6. **Peer reviewing** (workshop reviewer, ACL Rolling Review mentee).
+the owner's token supplied interactively. Verify the docs.rs page is live with curl.
+- crates.io publication is ranked as the top credibility tactic in the strategic doc.
+| `CV_Ibrar_Amin_Web.pdf` ← `web.tex` | Backend / Full-Stack roles | **NEW**, 1 page A4 |
+let corpus = b"the quick brown fox jumps over the lazy dog; \
+- Optional: `wasm32-unknown-unknown` target for the wasm stretch goal.
+search is unavailable in this planning environment. No claim is made here. The first
+let _ = std::fs::remove_file(&path);
+## Project status
+- Corrected `lead author on 3` to **2 first-author of 4**; dropped IEOM abstract from publications.
+fires before 2b starts. A second alternative, if hosting is ever funded, is to revisit a live demo
+warnings`, `cargo test`, `cargo doc --no-deps`, `cargo publish --dry-run`, and the
+settle local demand before optimizing for it; global remote roles remain the fallback.
+Start the next session fresh with signposts: `scope decision`, `ADR-001`, `gameplan Phase
+- Web-vs-AI abundance is unverified; first scraper run is the empirical check.
+`git diff --check -- docs/corporate-gameplan.md CHANGELOG.md state/session-state.json
+more credible to entry-level corporate recruiters, with an ordered, timeboxed, locally verifiable
+repos have `v0.1.0` tags/releases and green CI. The baseline is real and measurable.
+but applications and Phase 1-2 proof artifacts must continue in parallel.
+A from-scratch byte-level BPE tokenizer for Rust, benchmarked honestly against HuggingFace `tokenizers`.
+| OpenTelemetry | Differentiator | Absent in all four baseline e-commerce repos |
+\item Implemented a byte-pair-encoding tokenizer from scratch in Rust with optional feature-gated SIMD scoring and published it to crates.io with generated docs.rs API documentation.
+Small, complete, tested — each ends with a clean README + CI.
+- `pdftotext -layout <pdf> - | grep -iE 'patent|lead author on 3|IEOM|Architected'` returns no matches.
+remains UNVERIFIED until the scraper's first real run.
+print(f, max(float(x) for x in re.findall(r'yMax="([\d.]+)"', out)) / 841.89)
+## 6. Definition of Done - runnable commands with expected exit codes
+- `encode_realistic` — the pre-registered experiment. It encodes one frozen, fixed corpus, `results/corpus.txt` (73,637 bytes, 1,112 lines, SHA-256 `3a81cff56a99472fd1ace9bcb6222f55fb1c1706c3a9ae031e14ddd4a2c4631e`), made of this repository's own owner-authored documentation prose. The bytes are compiled into the benchmark with `include_bytes!` so the measured input cannot drift, `VOCAB_SIZE = 512` on every arm, and Criterion reports median encode throughput in MiB/s with 95% confidence intervals.
+| Command | Expected result |
+Three disjoint lanes ran in one parallel batch: (1) local repo recon — read `recommendations.md`,
+**Fastest CV strengtheners (ranked):**
+```sh
+- Training is corpus dependent. Merge rules only reflect the bytes and pair frequencies of the text used to train, so encode quality and token counts will vary across domains.
+- `@oracle` (devil's advocate): argue the strongest case AGAINST scope expansion, i.e. for
+## The benchmark, as measured
+- **`mini-redis` in Rust** — async TCP server, RESP protocol, `SET/GET/EXPIRE`, snapshot + AOF.
+still the empirical check.
+`bd-commerce-api` (.NET + PostgreSQL API + Next.js storefront) materially more credible
+## 6. Research question 4 — runnable local DoD, no live host
+feature, (3) owner reversing no-hosting, (4) `\ShowAgentic` provably unable to unblock, (5) a
+let bytes = tokenizer.decode(&ids).expect("encode output always decodes");
+| `git diff --check` | exit 0 |
+## Tradeoffs and caveats
+(Emulate `tokio-rs/mini-redis`, 4.8k★.)
+a compile test with the switch forced on must still exit 0.
+| 9 | Owner decision on version bump / publish / release — separate approval, not part of the build burst | owner | explicit owner go-ahead before any `cargo publish`, `gh release` or tag |
+- Bangladesh-local relevance (local payment rails, local order flow) is a deliberate
+Its counter-proposal was 20 logged applications, a scraper first run, and unblocking `\ShowAgentic`
+Timebox: one work-burst for steps 1-7, in the order shown; step 8 runs after all gates pass. Steps
+| Claim | Command / check | Observed |
+points the other way. Alternative: keep both projects as-is and spend the burst on 10+ applications
+or live payment credentials; no real money/KYC; no second flagship; no service mesh, mobile app,
+> Focus: **Rust × AI-infrastructure** as the differentiator, plus an academic track.
+- Owner approval required before any commit. No `.tex`, PDF, `state/`, or
+gate passes on all artifacts authored here.
+- Dual track: academic (lecturer) + corporate. Equal split web/backend vs AI/ML.
+# Page fill, re-measured after the \mbox rebuild (unchanged)
+State files to update after the build (by owner/orchestrator, not this session):
+- **Training is corpus dependent.** No pretrained vocabulary ships; users must train or load a saved file.
+utility beats an unpublished repo. (`cargo publish --dry-run` first.)
+Confirm Docker and the target host login work.
+rm -f _switchtest.tex
+buying a domain or free hosting" and "No hosted deployment by owner decision" in
+`cargo clippy --all-targets -- -D warnings`, `cargo fmt --check`, `cargo bench`,
+With a BSc only (2026), public-university Lecturer may be out of reach until you add an MSc — **private
+- Drift across three CV fragments plus two legacy CVs: all shared facts live in `fragments/`.
+- Phase 1 scope research DECIDED 2026-11-26 (ADR-002: assets only, no new features); the next
+| `fragments/*.tex` | Shared fact source for all variants | **NEW** |
+Teaching experience → Awards → Presentations → Skills → Service → References.
+initiate/callback idempotency and fixed-time HMAC compare (`PaymentEndpoints.cs:45-55,129-144,
+|---|---|---|---|
+**Strong academic CV order:** contact (incl. Scholar/ORCID) → Education (+thesis, supervisor) →
+payment-and-order flow, consumed by a small Next.js storefront, with Docker, CI,
+- `docs/adr/ADR-001-scope-expansion.md`: immutable decision record (the `adr/` directory
+clean mock-provider fallback behind an interface (see Risks).
+posts typically require a 4-year **Bachelor's *and* a Master's**, with first-class/high CGPA in both.
+- PerfPal verifiability deferred by owner.
+Docker Compose and CI. Missing: auth/RBAC (all endpoints anonymous, `README.md:122`), any
+}
+for f in ("CV_Ibrar_Amin_AI-ML.pdf", "CV_Ibrar_Amin_Web.pdf"):
+endpoint is anonymous and no money moves. No live URL is claimed (owner decisions "Owner ruled out
+7. **Day 7-9 - Next.js storefront** in `web/`: product list, checkout form posting to
+the correct CV variant, recording that as the decision instead.
+- How to become a mech-interp researcher — https://www.alignmentforum.org/posts/jP9KDyMkchuv6tHwm/how-to-become-a-mechanistic-interpretability-researcher
+## 5. 90-day plan
+https://github.com/sweepai/bpe-qwen). Pretrained vocabularies are also table stakes
+# Corporate Track Gameplan: Ibrar Amin
+```bash
+while the BD job-abundance claim is still UNVERIFIED. If the first scraper run shows
+build`, format check. Add status badge to README.
+|---|---|---|
+- SAELens — https://github.com/decoderesearch/SAELens · nnsight — https://github.com/ndif-team/nnsight
+|---|---|
+In scope: public repo `bd-commerce-api`; versioned REST API; PostgreSQL persistence;
+the API, order-status page. API base URL from env; no hardcoded localhost in build.
+> (`SerenityOS`, `redox`, `blog_os`) — but a focused Rust inference engine or interp toolkit is far
+parity vs pinned llama.cpp"), application volume is unmeasured (decision "Portfolio depth may not
+- Writer reconciliation: phase-1 closeout (commit `7c9b636`) and Phase 4 burst-4 (commit `79d81a2`,
+python3 - <<'PY'
+- `encode_throughput` — the original comparison against HuggingFace `tokenizers` BPE on a deterministic in-memory ASCII fixture, 235,520 bytes (512 repetitions of one paragraph), with the same target vocabulary size (512) on both sides. That fixture is synthetic; see Comparison settings below for the exact HuggingFace configuration. Its historical run was recorded 2026-11-25 with `cargo bench --bench bpe_bench -- --warm-up-time 1 --measurement-time 3 --sample-size 10`; its figures are not repeated here because no results artifact under `results/` records them. This group is separate from `encode_realistic` and the two methodologies must not be mixed.
+Candidates: feature-gated SIMD merge scoring (keep only if a Criterion run shows a real
+2b`. Implementation follows only after the owner approves the chosen scope. The EOL ritual
+import re, subprocess
+- None technical. CV repo has no remote; this closeout committed only state/handoff/CHANGELOG/design files.
+## 7. Research question 5 — opportunity cost
+Owner: Ibrar Amin. Equal-split strategy: this project and `phase2-web.md` are built in
+designs for non-goals; (2) web norms research — cited public repos for Rust tokenizer and ASP.NET
+hardening, a committed `k6` load-test script plus stored results, additional provider
+wasm build only if step 7 was kept. Add badge to README.
+| `grep -c '^## ' docs/sessions/phase-2/scope-decision.md` | >= 6 (one per research question plus decision) |
+## 2. Credibility tactics — ranked by ROI
+| 7 | 2b-B4: README honesty pass — every endpoint anonymous, sandbox only, no hosted URL, real benchmark scope | docs-writer | `grep -n 'live URL\|deployed' projects/bd-commerce-api/README.md` -> no false claim |
+## Recent decisions
+`dotnet/eShop`) and exists only in dedicated OTel demos — a differentiator
+# Session design: Phase 2 AI (Rust BPE tokenizer crate)
+The `encode_realistic` group has three arms over identical bytes: `scalar` (the default serial `Tokenizer::encode`), `parallel` (`Tokenizer::encode_parallel`, a thin alias for `encode` unless the opt-in `parallel` feature enables its Rayon minimum-rank scan), and `simd` (`Tokenizer::encode_simd`, an SSE2 candidate compiled only under the opt-in `simd` feature on x86_64).
+classification reflects prevalence in public repos only. No claim is made that these features
+- build-your-own-x — https://github.com/codecrafters-io/build-your-own-x
+| File | Audience | Status |
+```
+Criterion run + conditional SIMD only on a real win + README hygiene; bd-commerce-api = local
+| 4 | 2b-B1: OpenTelemetry-style tracing (collector + Jaeger) in the existing Compose stack; no live host | fixer (web lane) | `cd projects/bd-commerce-api && dotnet test -c Release` and `docker compose config --quiet` |
+# Active Context (rolling memory)
+```
+## Quick start
+`polars`, `ruff`, `clap`, `tokio`, `axum`, `bevy`. Interp/safety: `TransformerLens`, `SAELens`,
+Checklist (all required): README with install, API example, benchmark table using
+use byte_bpe::Tokenizer;
+## 8. Verification (claim -> evidence)
+`.tex`/PDF edits, no commits without explicit owner approval. It decides WHAT to build
+## 6. Definition of Done - runnable commands with expected exit codes
+sed 's/\\def\\ShowThesis{}/\\def\\ShowThesis{}\\def\\ShowAgentic{}\\def\\ShowDeployedAPI{}/' ai_ml.tex > _switchtest.tex
+## 7. Definition of Done (runnable commands, expected exit 0)
+let tokenizer = Tokenizer::train(corpus, 512);
+let ids = tokenizer.encode(b"quick brown fox");
+Paste into the PROJECTS itemize in `fragments/projects-web.tex` (Web CV) after owner approval; also enable `\def\ShowDeployedAPI{}` in `web.tex` (no em-dashes):
+add a Neuronpedia-style feature browser. Extends your threat-register thesis directly →
+Unreleased, and `docs/activeContext.md`.
+- Corporate-jobs scraper is a later session; web-vs-AI job abundance in BD is UNVERIFIED.
+```
+## 8. CV update line to paste into the relevant CV fragment after completion
+Version note: `tokenizers` 0.21 removed the older `Tokenizer::train_from_iterator` method, and the dynamically typed `tokenizers::Tokenizer` uses an internal `ModelWrapper`. The benchmark therefore trains the `BPE` model directly through the `Trainer` trait and wraps the trained model in a `Tokenizer`. Both sides see the same corpus bytes and the same vocabulary target.
+---
+| Feature-gated vocabularies / bundled vocab | Table stakes | HF, `rust-tiktoken`, `splintr` |
+## Phase 1 scope decision (2026-11-26, ADR-002)
+4. **Day 4-5 - correctness.** Encode/decode roundtrip tests; proptest property
+cannot be honestly verified in this environment.
+- Writer reconciliation: Phase 4 burst-4 commit `79d81a2` and Phase 2 ADR-001 preserved; shared
+**Research programs to apply to:** MATS, Anthropic Fellows, CAIS ML Safety Scholars, SPAR,
+5. **Day 5-6 - SIMD if feasible.** Try `std::simd` (nightly) or the `wide` crate behind
+## 5. Research question 3 — table stakes vs differentiators
+| 1 | `docs/sessions/phase-1/nexus.md` | Nexus: structured OCR fixtures, idempotent webhook + outbox, zero-credential demo |
+- Owner-owned crates.io API token for the final publish; never commit or paste it into
+(bd-commerce-api).** Sequence and timeboxes are in `docs/corporate-gameplan.md` section 9.
+methodology weaknesses and code smells; no raw file dumps.
+## 2. Why this project / market assumption
+SIMD is a conditional stretch goal with the same falsification rule. wasm and a shipped pretrained
+| `cargo test` | exit 0; all unit + proptest tests pass |
+**Portfolio rule:** **1 flagship + 2 finished mid-size + 1 crates.io publish + 1 deep blog post**
+- Read `state/session-state.json` + `state/handoff/latest.md` for current phase.
+RESEARCH + DECISION session only: no feature implementation, no crates.io publish, no
+microservices mesh; mobile app; learning PHP/Laravel "on spec" (explicitly out);
+via environment variables only; assert no secret is tracked.
+jailbreak benchmark, a refusal-direction / activation-steering study (`nnsight` + Gradio demo), and an
+feature requiring a live URL is out unless the owner reverses that decision.
+- AI-powered-development flagship (`agentic-build-lab`) goes in both CVs with different framing.
+## 6. Definition of Done for Phase 0
+| `python3 -m json.tool state/session-state.json` | exit 0; history arrays only appended |
+### Existing assets to fix (cheap wins)
+## 2. Why this project / market assumption
+## 7. Risks + weakest assumption + one alternative
+- Extends the owner's demonstrated low-level C/C++ plus ML profile (`MiniML-CPP`
+> more achievable and equally recruitable for your target roles.
+The crate and docs.rs page are live, and the tagged GitHub releases (`v0.1.0`, then `v0.1.1` for a newer-clippy lint fix) are citable. A follow-up can test whether feature-gated SIMD scoring narrows the 5.7x gap, with the same benchmark harness deciding honestly.
+## 9. Explicit non-goals
+9. **Day 10-11 - CI.** GitHub Actions: `cargo fmt --check`, `cargo clippy -- -D
+The oracle argued the strongest case against expansion: the portfolio thesis is already satisfied
+1. **Day 1 - freeze scope, scaffold.** Create public repo `bpe-rs`, check the crate name
+- Send the correct CV per role; log which variant was sent.
+- Read `state/session-state.json`, `state/handoff/latest.md`, `docs/activeContext.md`.
+## 5. Step-by-step build order (numbered, 2-week friendly)
+| `curl -fsS "$LIVE_URL/swagger/v1/swagger.json" \| head -c 200` | exit 0; OpenAPI JSON served |
+burst is asset refresh only and needs explicit owner approval.
+- Referrals via AIUB alumni and local Rust/AI meetups; never send one CV to both tracks.
+- **The result is unfavorable, and that is the point.** HuggingFace is about 5.7× faster. Our encoder rebuilds a merge-rank map and rescans the whole sequence on each pass, while the mature library uses optimized pretokenization and parallel-friendly structures. Publishing the raw number is more credible than quietly omitting the comparison.
+- `\ShowScholar` / `\ShowThesis`: on in `ai_ml.tex`, off in `web.tex`.
+## 4. Research question 2 — bd-commerce-api: biggest realism gap without hosting
+| `cargo publish --dry-run` | N/A (no crate in this project); not run |
+# Portfolio & Career Roadmap — Ibrar Amin
+adapters behind `IPaymentProvider`, richer seed data, API contract tests.
+lanes (local recon, cited web norms, oracle), reconciled at an owner decision gate.
+Decide with evidence which additional features make `byte-bpe` (Rust BPE crate) and
+### Phase 2 — mid-size, reinforcing the story
+| Publication facts match brief | `python3 scripts/gates/verify-publications.py` (30 checks: 4 titles in brief + CV, 13 authors, 9 venue/year/page tokens, 3 DOIs, 4 bolded I. Amin) | exit 0; 30/30 PASS |
+- Portfolio work competes with income: applications start in Phase 0, before any new project ships.
+- Publication facts: a Python comparison checks all 4 title tokens and 3 DOIs against `CV_FIX_TASK.md`.
+## 10. Weakest assumption and one alternative
+table stakes in peer repos, BUT it is an explicit non-goal here (`web.md:39-49`) and is therefore
+## 4. Research questions (answer every one)
+`ActivitySource`/OTel instrumentation, a committed k6 script and stored results, a distinct
+Owner directive: polish and expand both projects before applying; applications stay with the owner.
+`state/handoff/latest.md` (verification table mapping each DoD command to observed
+## Current task
+| 6 | 2b-B3: committed k6 load script + stored results against local Compose (confirm k6 installs locally first; if not, drop cleanly and record why) | fixer (web lane) | `cd projects/bd-commerce-api && k6 run load/k6.js` against local Compose; results committed under `results/` |
+3. **Day 2-4 - training + serialization.** Train merges from a small fixed corpus,
+In scope: public repo `bpe-rs`; byte-level BPE training and encode/decode; optional
+both projects "to the best of my abilities before I apply," with applications left to the owner.
+present (`src/lib.rs:18-30`), docs.rs/CI badges and tagged release (`README.md:5,89-90`).
+realistic corpus; keep only if a real win is measured, otherwise record the negative result.
+- Append to `state/session-state.json` (append-only arrays), `CHANGELOG.md` under
+|---|---|---|
+that asset refresh causes interviews or offers. Feature candidates (MiniML mini-batching/richer
+3. What do comparable public repos in these niches treat as table stakes versus a
+`docs/sessions/phase-1/scope-decision.md`.
+buying a domain or a free host; GitHub repos are the canonical showcase. Any candidate
+professional READMEs + guides, and repo About/topics set. The next burst is the
+access before Day 10.
+- Replaced `Architected and deployed ... microservices` with the honest intern wording already used
+# Session design: Phase 2 scope-expansion research (decision session)
+- garak — https://github.com/NVIDIA/garak · inspect_ai — https://github.com/UKGovernmentBEIS/inspect_ai
+- Owner activated Phase 4 immediately (2026-11-25) despite the interview gate; opportunity cost accepted,
+for THIS closeout is recorded in `state/handoff/latest.md`.
+### Phase 0 — weekend warmups (build "shippable" muscle)
+Idempotency/optimistic concurrency appears only in `dotnet/eShop` and `leo8190/orderflow-api`.
+storefront (product list, checkout, order status); Docker Compose (api + db); GitHub
+- AI flagship is gated off (`\ShowAgentic` undefined in both variants) until the public repo exists;
+Build two outbound corporate CVs and a proof-of-work portfolio strong enough for entry-level
+4. **Day 4-5 - sandbox integration.** Provider interface `IPaymentProvider` with a
+6. **Day 6-8 - benchmark.** Criterion suite comparing encode throughput against
+- Benchmark methodology caveats: `encode_throughput` uses synthetic ASCII text, not a real downstream dataset; the pre-registered `encode_realistic` corpus is real owner-authored documentation prose with a fixed SHA-256, but it is Markdown-and-code documentation, not a natural-language book excerpt. The HuggingFace model uses its own BPE training procedure and an alphabet of byte values represented as Unicode scalar values, so vocabularies are not token for token identical. Every measurement is from one local machine; results depend on CPU, compiler version, and corpus size. The parallel and SIMD paths must produce byte-identical ids to the serial `encode` before any win may be claimed (`results/bench-preregistration.md`). No throughput figures are quoted in this README because no results artifact is committed under `results/` yet.
+|---|---|
+`state/session-state.json` (artifacts, decisions, next_actions, current_phase),
+- LinkedIn headline = target role per track; Featured = matching CV PDF + best project links.
+`LICENSE`, README skeleton with a status table, `.gitignore`, .NET 8 solution.
+- Owner: manually pin both GitHub repos on the profile.
+- Published 2026-11-26: <https://crates.io/crates/byte-bpe> (v0.1.1) with generated API docs at <https://docs.rs/byte-bpe/0.1.1/byte_bpe/>.
+**TIOBE top-10 for the first time in July 2026**. Demand concentrates in infra, databases, embedded, AI-infra.
+record p95 latency and throughput. Replace `[your real number]` placeholders in the
+Decision: **local OpenTelemetry-style tracing, API contract tests, and a committed k6 load script
+| No ligature / em-dash artifacts | `pdftotext -layout CV_Ibrar_Amin_{AI-ML,Web}.pdf - \| grep -iP '[\x{FB00}-\x{FB06}]\|\x{2014}'` | none |
+| 1 (deferred) | Owner handles PerfPal separately | Showcase-ready PerfPal variant |
+(https://github.com/huggingface/tokenizers, https://github.com/ml-rust/splintr,
+## Demo
+| `CV_Ibrar_Amin_Academic.pdf` | Lecturer (CSE), private BD universities | Existing, untouched, SHORTLIST |
+---
+2. **Day 1-2 - domain + schema.** Entities `Order`, `OrderItem`, `PaymentIntent`;
+### 8.2 Parallel review panel
+let reloaded = Tokenizer::from_file(&path).expect("load");
+README with exact measured values plus the exact command and hardware. Capture a
+1. **Day 1 - freeze scope, scaffold.** Create public repo `bd-commerce-api`, MIT
+portfolio table stakes; (3) oracle devil's advocate — strongest case against expansion. Findings
+Before running the docs.rs row, substitute the placeholders: export `CRATE_NAME` and
+\begin{itemize}
+> Naming note: this package is published as `byte-bpe` because `bpe-rs` was already taken on crates.io (verified and recorded on 2026-11-25). The repository directory and GitHub project remain `bpe-rs`.
+---
+## 3. Preconditions / read-first checklist
+# Phase 2 scope decision (research + decision session)
+scraper run (Bdjobs/LinkedIn counts for "Rust", "ML engineer", "backend", Dhaka) will
+- No runtime dependencies are needed to encode once a tokenizer is trained.
+`projects/deep-flagship`: 14 `task-gate.sh` commands — `cargo test --quiet` (63 unit + 2
+realistic corpus with real committed results; conditional feature-gated SIMD kept only if that
+Actions CI; OpenAPI/Swagger; live deployment; one measured metric; README + LICENSE +
+SLOWER than scalar at 128x128x128") — a different workload, so no speedup is presumed.
+Evidence and the rejected counter-proposal are in `docs/sessions/phase-2/scope-decision.md` and
+## 1. The portfolio to build (in order)
+| wasm binding / browser demo | Differentiator (out) | Only HF and `rust-tiktoken`; owner no-hosting + `ai.md:47` |
+- Chosen scope (ADR-001, Accepted): byte-bpe = feature-gated parallel encode + pre-registered
+- External norms/hiring weighting UNVERIFIED (websearch no results, gh_grep rate-limited); no claim
+be the bottleneck; application volume is unmeasured"), income is urgent (decision "Owner is
+Runnable locally with exit 0: for byte-bpe — `cargo test`, `cargo doc --no-deps`,
+2. **Day 1-2 - core types.** Byte-level alphabet (256 symbols), vocab and merge-rule
+any second framework; the flagship `tiny-infer` project; editing CV/state files here.
+---
+- Both artifacts shipped: `byte-bpe` v0.1.1 is live on crates.io and docs.rs; both GitHub
+4. **PerfPal verifiability is deferred** by the owner; it needs a separate showcase-ready version.
+- Read `state/session-state.json` + `state/handoff/latest.md` for current phase.
+---
+| Weeks 4–9 | **Flagship**: `tiny-infer` (corporate) *or* mech-interp toolkit (academic) |
+is surfaced to the owner and to the review panel rather than silently fixed; the decision-session
+half-finished repos (per `docs/recommendations.md`).
+with rustdoc-hosted docs and a README benchmark, keeping the artifact complete and
+lanes (local recon, oracle, vision, direct browser/copy checks) plus a failed external-norms lane.
+\end{itemize}
+HuggingFace `tokenizers` on the same corpus and vocab. Record hardware, corpus,
+## 3. Research question 1 — byte-bpe: largest credibility gain per hour
+Non-goals: real money or live payment credentials; production-grade KYC; auth/RBAC;
+## Phase 2 scope decision (2026-11-26, ADR-001)
+`[your real number]` until filled, and stated limitations; CI workflow green with
+2. **bd-commerce-api:** which feature closes the biggest realism gap without hosting?
+exit code), `docs/activeContext.md`, and `CHANGELOG.md` under Unreleased. The commit
+unfavorable.
+`tools/test_parity_check.py`, `cargo publish --dry-run --allow-dirty` (exit 0), artifact/badge
+## 2. Decisions locked (owner, 2026-11-25)
+4. **OSS contributions** to interp/safety libraries (verifiable, public).
+6. Live web search is unavailable in this environment; the "web roles are more abundant" premise
+- UGC Bangladesh — https://ugc.gov.bd/acts
+improvement; otherwise leave scalar as default and record the honest negative result.
+- model: `tokenizers::models::bpe::BPE::default()`
+- Earlier publish attempts were rejected until the owner verified the crates.io account email; the tagged GitHub releases remain the citable fallback. The 24-second demo GIF is above.
+255-byte runs, unseen bytes). `cargo test` green before adding optimizations.
+---
+designs (`ai.md`, `web.md`) for the explicit non-goals that must not be silently undone.
+## 9. Handoff note
+- Read `fragments/projects-web.tex` + `fragments/skills-web.tex` (built by `web.tex`) to know the target CV line; do not edit them in this session.
+Hiring-outcome weighting of any row is **UNVERIFIED** — no hiring studies were consulted;
+- Owner: decide on CV fragment lines (`projects-ai.tex`, `projects-web.tex`); no `.tex` edit yet.
+and keep the oracle's "what would change my mind" conditions as the reversal triggers: (1) 10+
+7. **Day 8-9 - wasm stretch (optional).** Add `wasm32-unknown-unknown` build and a tiny
+cargo add byte-bpe
+- **Add `vulnerability-essential-protein-prediction`** (already public) to both CVs.
+idempotency keys, and HMAC signature verification on the callback.
+| `curl -fsS -X POST "$LIVE_URL/orders" -H 'Content-Type: application/json' -d @samples/order.json` | exit 0; order persisted, id returned |
+## 3. GitHub profile optimization
+// Persist and reload a trained tokenizer.
+unfilled.
+- Removed `patent pending` (owner confirmed no patent): PerfPal is `Proprietary, closed-source`.
+Publish a from-scratch Rust BPE tokenizer to crates.io, benchmarked honestly against
+| Weeks 1–3 | `mini-redis` (Rust) shipped + GitHub profile README + pin best repos |
+"slower toy." Use identical corpus and settings and publish the raw numbers even if
+`nnsight`, `garak`, `inspect_ai`, `lm-evaluation-harness`.
+4. **Reproduce a paper in Rust** (RoPE, FlashAttention, quantization, speculative decoding) + write-up.
+All commands run from repo root. Every command must exit 0 unless marked N/A.
+parallel, each timeboxed to roughly 2 weeks. Finish one complete artifact over two
+| Auth/JWT + roles | Table stakes **but non-goal** | All four baseline repos; forbidden by `web.md:39-49` |
+## 2. Why now
+a `simd` feature for merge scoring. Keep it only if a Criterion run shows a real
+- Scope expansion deferred to research sessions, never implemented ad hoc.
+`docs/corporate-gameplan.md` edits from this session.
+EF Core migrations; seed a few products; document the schema in README.
+Reproduce a classic interp result with `transformer_lens`, train + release SAEs via `sae_lens`,
+- Owner decision: **assets only, no new features.** Refresh MiniML XOR GIF at higher source
+- Phase 4 `byte-bpe` path-dependency publish blocker resolved by the publish.
+(tokenizers named explicitly as a scarce, demoable signal).
+2. **Contribute to high-signal OSS** — docs/tests count. Beginner-friendly Rust: `nushell`, `zellij`,
+- **2b-A (byte-bpe):** feature-gated parallel encode; pre-registered Criterion benchmark on a
+- Read `docs/recommendations.md` (Rust x AI-infra thesis, publish-first, GitHub hygiene).
+5. What is the opportunity cost versus application volume and the other queued sessions
+- One alternative: keep `IPaymentProvider`, ship only the deterministic
+thin ASP.NET demand, the local differentiator is weaker than assumed.
+pdfinfo /var/tmp/opencode/cvbuild-corp/_switchtest2.pdf | grep '^Pages:'   # Pages: 1
+## 6. Key sources
+- Research + decision session run from `docs/sessions/phase-2/scope-expansion.md`: three parallel
+8. **Day 9-10 - containers.** Multi-stage Dockerfile (non-root, healthcheck) and
+- `\ShowAgentic`: enable in BOTH outbound CVs only once `agentic-build-lab` has a public repo + dashboard.
+commit were performed here. Implementation follows in a separate, owner-approved work-burst.
+bKash/Nagad sandbox adapter and a deterministic `MockProvider` for CI. Credentials
+### Phase 1 — the flagship (pick ONE, multi-week)
+- Publish: owner first chose N/A, then reinstated the check after `byte-bpe` v0.1.1 went live;
+| Weeks 10–12 | Tokenizer crate published to crates.io + deep blog post + (academic) arXiv preprint |
+`decode(encode(bytes)) == bytes` for byte-level mode; edge cases (empty input,
+# Building byte-bpe: an honest benchmark against HuggingFace
+// Train on any byte corpus. The base alphabet is all 256 byte values.
+- **The corpora are identical bytes but not identical tokenizations.** HuggingFace's trainer uses its own BPE procedure over Unicode scalars with a 256-byte initial alphabet; ours merges over raw bytes. The vocabularies are not token-for-token identical, so this measures end-to-end encode throughput under matched inputs and target size, not a controlled algorithm microbenchmark.

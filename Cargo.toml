@@ -9,6 +9,12 @@ readme = "README.md"
 keywords = ["tokenizer", "bpe", "nlp"]
 categories = ["text-processing", "science"]
 
+[features]
+# Opt-in only: with default features `encode` keeps the original single-threaded path.
+default = []
+# Provisional SIMD candidate for the pre-registered falsification experiment (2b-A2).
+simd = []
+
 [dev-dependencies]
 criterion = "0.5"
 proptest = "1"

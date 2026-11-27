@@ -15,6 +15,10 @@ use tokenizers::tokenizer::Trainer;
 /// Target vocabulary size for both tokenizers.
 const VOCAB_SIZE: usize = 512;
 
+/// Frozen, non-synthetic prose corpus (see `results/preregistration.md`).
+/// Compiled into the benchmark so the measured bytes can never drift.
+const REALISTIC_CORPUS: &[u8] = include_bytes!("../results/corpus.txt");
+
 /// Deterministic corpus generated in code from public-domain-style ASCII text.
 /// The same bytes are used for training and for both encode benchmarks.
 fn build_corpus() -> Vec<u8> {
@@ -95,7 +99,34 @@ fn bench_huggingface_bpe(c: &mut Criterion, corpus: &[u8]) {
     group.finish();
 }
 
+/// Pre-registered decision group: every arm encodes the identical real-prose
+/// bytes with the same vocabulary. Criterion's console reports the mean estimator;
+/// the pre-registered SIMD gate reads `median.estimate` from the JSON output.
+fn bench_realistic(c: &mut Criterion) {
+    let corpus = REALISTIC_CORPUS;
+    let tokenizer = Tokenizer::train(corpus, VOCAB_SIZE);
+
+    let mut group = c.benchmark_group("encode_realistic");
+    group.throughput(Throughput::Bytes(corpus.len() as u64));
+
+    group.bench_function(BenchmarkId::new("scalar", VOCAB_SIZE), |b| {
+        b.iter(|| {
+            let ids = tokenizer.encode(black_box(corpus));
+            black_box(ids)
+        });
+    });
+    #[cfg(feature = "simd")]
+    group.bench_function(BenchmarkId::new("simd", VOCAB_SIZE), |b| {
+        b.iter(|| {
+            let ids = tokenizer.encode_simd(black_box(corpus));
+            black_box(ids)
+        });
+    });
+    group.finish();
+}
+
 fn benches(c: &mut Criterion) {
+    bench_realistic(c);
     let corpus = build_corpus();
     bench_byte_bpe(c, &corpus);
     bench_huggingface_bpe(c, &corpus);
